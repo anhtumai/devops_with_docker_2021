@@ -205,6 +205,7 @@ Successfully tagged web-server:latest
 ```
 
 [Dockerfile](ex7/Dockerfile)
+
 ![Screenshot](screenshots/ex7.png)
 
 ### 1.8: Image for script
@@ -246,6 +247,7 @@ Searching..
 ```
 
 [Dockerfile](ex8/Dockerfile)
+
 ![Screenshot](screenshots/ex8.png)
 
 ### 1.9: Volumes
@@ -272,3 +274,66 @@ fb241acccbbbb883c990a1b4f0cfdeccc4801bb070a4b32f7522a543d4f05c09
 {"message":"You connected to the following path: /","path":"/"}%
 ```
 ![Screenshot](screenshots/ex10.png)
+
+### 1.11: Spring
+
+```bash
+λ  Part1 git:(master) ✗ docker build ex11 -t spring-project
+Sending build context to Docker daemon  1.904MB
+
+λ  Part1 git:(master) ✗ docker run -d -p 8080:8080 spring-project
+2c13c7ba7bc3d816b82043a01464ec3e88f64d3455a3b3c8b25ce3487941122e
+```
+
+[Dockerfile](ex11/Dockerfile)
+
+![Screenshot](screenshots/ex11.png)
+
+### 1.12: Hello, frontend!
+
+```bash
+λ  Part1 git:(master) ✗ docker build ex12 -t frontend-app
+Sending build context to Docker daemon  1.904MB
+
+λ  Part1 git:(master) ✗ docker run -p 5000:5000 frontend-app      
+INFO: Accepting connections at http://localhost:5000
+
+```
+
+[Dockerfile](ex12/Dockerfile)
+
+![Screenshot](screenshots/ex12.png)
+
+### 1.13: Hello, backend!
+
+```bash
+λ  Part1 git:(master) ✗ docker run -d -p 8080:8080 go-backend
+52318ca14c02855fbc0bad2ce5d10f61f6c053db99ea405385c0eeca505ffd28
+```
+
+[Dockerfile](ex13/Dockerfile)
+
+![Screenshot](screenshots/ex13.png)
+
+### 1.14: Environment
+
+```bash
+λ  Part1 git:(master) ✗ docker build -f ex14/Dockerfile.front ex14 -t frontend-app --no-cache
+
+λ  Part1 git:(master) ✗ docker build -f ex14/Dockerfile.back ex14 -t backend-app --no-cache
+
+λ  Part1 git:(master) ✗ docker run -d -p 5000:5000 frontend-app
+
+λ  Part1 git:(master) ✗ docker run -d -p 8080:8080 backend-app
+```
+
+[Frontend Dockerfile](ex14/Dockerfile.front)
+
+[Backend Dockerfile](ex14/Dockerfile.back)
+
+![Screenshot](screenshots/ex14.png)
+
+### 1.16: Heroku
+ 
+[URL](https://devopwithdockertask15.herokuapp.com/)
+
