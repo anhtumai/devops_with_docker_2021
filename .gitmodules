@@ -10,3 +10,24 @@
 [submodule "Part1/ex14/material-applications"]
 	path = Part1/ex14/material-applications
 	url = https://github.com/docker-hy/material-applications.git
+[submodule "Part2/ex3/material-applications"]
+	path = Part2/ex3/material-applications
+	url = https://github.com/docker-hy/material-applications.git
+[submodule "Part2/ex4/material-applications"]
+	path = Part2/ex4/material-applications
+	url = https://github.com/docker-hy/material-applications.git
+[submodule "Part2/ex5/material-applications"]
+	path = Part2/ex5/material-applications
+	url = https://github.com/docker-hy/material-applications.git
+[submodule "Part2/ex6/material-applications"]
+	path = Part2/ex6/material-applications
+	url = https://github.com/docker-hy/material-applications.git
+[submodule "Part2/ex8/material-applications"]
+	path = Part2/ex8/material-applications
+	url = https://github.com/docker-hy/material-applications.git
+[submodule "Part2/ex9/material-applications"]
+	path = Part2/ex9/material-applications
+	url = https://github.com/docker-hy/material-applications.git
+[submodule "Part2/ex10/material-applications"]
+	path = Part2/ex10/material-applications
+	url = https://github.com/docker-hy/material-applications.git

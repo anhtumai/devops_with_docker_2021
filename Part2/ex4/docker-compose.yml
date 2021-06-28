@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  frontend:
+    ports:
+      - 5000:5000
+    build:
+      context: .
+      dockerfile: Dockerfile.front
+  backend:
+    ports:
+      - 8080:8080
+    build:
+      context: .
+      dockerfile: Dockerfile.back
+    volumes:
+      - ./logs.txt:/backend-example-docker/logs.txt
+    environment:
+      - REDIS_HOST=redis
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
