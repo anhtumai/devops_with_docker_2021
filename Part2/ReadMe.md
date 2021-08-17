@@ -282,7 +282,7 @@ services:
 
 [Docker-compose file](ex11/docker-compose.yml)
 
-[Demo](screenshots/ex11.webm)
+[Demo](screenshots/ex11.gif)
 
 App description:
 
