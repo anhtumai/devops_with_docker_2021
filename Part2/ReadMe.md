@@ -53,7 +53,6 @@ services:
 
 ### 2.4
 
-
 [Docker-compose file](ex4/docker-compose.yml)
 
 ```bash
@@ -71,9 +70,7 @@ services:
       - 6379:6379
 ```
 
-
 ![Screenshot](screenshots/ex4.png)
-
 
 ### 2.5
 
@@ -280,3 +277,26 @@ services:
 ```
 
 ![Screenshot](screenshots/ex10.png)
+
+### 2.11
+
+[Docker-compose file](ex11/docker-compose.yml)
+
+[Demo]
+
+App description:
+
+This app is a final submission for this course: `https://fullstackopen.com/en/part4/structure_of_backend_application_introduction_to_testing#exercises-4-1-4-2`.
+This app allows users to save information about interesting blogs they have
+stumbled across on the internet.
+For each listed blog we will save the author, title, url, and amount of upvotes
+from users of the application.
+
+This application contains 3 parts:
+
+- [client side](https://github.com/anhtumai/blog-list-frontend-v2/tree/containerize)
+- [server side](https://github.com/anhtumai/blog-list-backend/tree/containerize)
+- database (mongodb)
+
+I have added Dockerfile to client side and server side repos, added
+a docker-compose file to spawn a web application without further setup.
