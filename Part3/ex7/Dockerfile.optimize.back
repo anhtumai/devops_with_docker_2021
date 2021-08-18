@@ -1,0 +1,29 @@
+FROM node:14-alpine AS builder
+
+WORKDIR /usr/src/app
+
+COPY blog-list-backend/package.json .
+COPY blog-list-backend/tsconfig.json .
+COPY blog-list-backend/src src
+
+RUN ls
+
+RUN cat tsconfig.json
+
+RUN npm install && \
+		npm run build
+
+FROM node:14-alpine
+
+WORKDIR /usr/src/app
+
+COPY --from=builder /usr/src/app/node_modules node_modules
+COPY --from=builder /usr/src/app/build build
+COPY --from=builder /usr/src/app/package.json .
+
+RUN	addgroup -S appgroup && \
+		adduser -S appuser -G appgroup
+
+USER appuser
+
+CMD npm start
