@@ -1,15 +1,20 @@
-FROM golang:1.16.7-alpine3.14
+FROM golang:1.16.7-alpine3.14 AS builder
 
 WORKDIR /usr/src/app
 
 COPY /material-applications/example-backend /usr/src/app
 
+RUN go build
+
+FROM alpine
+
+COPY --from=builder /usr/src/app/server /server
+
 EXPOSE 8080
 
 ENV REQUEST_ORIGIN=http://localhost:5000
 
-RUN go build && \
-		addgroup -S appgroup && \
+RUN addgroup -S appgroup && \
 		adduser -S appuser -G appgroup
 
 USER appuser
