@@ -46,3 +46,6 @@
 [submodule "Part3/ex5/material-applications"]
 	path = Part3/ex5/material-applications
 	url = https://github.com/docker-hy/material-applications.git
+[submodule "Part3/ex6/material-applications"]
+	path = Part3/ex6/material-applications
+	url = https://github.com/docker-hy/material-applications.git

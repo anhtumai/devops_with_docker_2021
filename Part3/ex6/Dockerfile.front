@@ -1,0 +1,22 @@
+FROM node:14-alpine AS builder
+
+WORKDIR /usr/src/app
+
+COPY /material-applications/example-frontend /usr/src/app
+
+RUN npm install && \
+		npm run build
+
+FROM node:14-alpine
+
+COPY --from=builder /usr/src/app/build /build
+
+RUN npm install -g serve && \
+		addgroup -S appgroup && adduser -S appuser -G appgroup
+
+USER appuser
+
+EXPOSE 5000
+
+CMD ["serve", "-s", "-l", "5000", "build"]
+
