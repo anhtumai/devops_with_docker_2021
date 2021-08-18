@@ -73,3 +73,9 @@ $> docker-compose up
 
 ![Screenshot](screenshots/ex6.png)
 
+### Size check from 3.3 to 3.6
+
+![Backend size check](screenshots/backendsizecheck.png)
+![Frontend size check](screenshots/frontendsizecheck.png)
+
+### 3.7
