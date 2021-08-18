@@ -1,0 +1,18 @@
+FROM node:14
+
+WORKDIR /usr/src/app
+
+COPY /material-applications/example-frontend /usr/src/app
+
+RUN npm install -g serve && \
+		chown -R node /usr/src/app
+
+USER node
+
+RUN npm install && \
+		npm run build
+
+EXPOSE 5000
+
+CMD ["serve", "-s", "-l", "5000", "build"]
+

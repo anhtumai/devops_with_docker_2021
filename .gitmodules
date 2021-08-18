@@ -40,3 +40,9 @@
 	path = Part2/ex11/blog-list-frontend-v2
 	url = git@github.com:anhtumai/blog-list-frontend-v2.git
 	branch = containerize
+[submodule "Part3/ex4/material-applications"]
+	path = Part3/ex4/material-applications
+	url = https://github.com/docker-hy/material-applications.git
+[submodule "Part3/ex5/material-applications"]
+	path = Part3/ex5/material-applications
+	url = https://github.com/docker-hy/material-applications.git
