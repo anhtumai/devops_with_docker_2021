@@ -6,10 +6,6 @@ COPY blog-list-backend/package.json .
 COPY blog-list-backend/tsconfig.json .
 COPY blog-list-backend/src src
 
-RUN ls
-
-RUN cat tsconfig.json
-
 RUN npm install && \
 		npm run build
 
