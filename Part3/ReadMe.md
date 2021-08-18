@@ -59,3 +59,17 @@ $> docker-compose up
 
 ![Screenshot](screenshots/ex5.png)
 
+### 3.6
+
+Frontend Dockerfile: [Dockerfile](./ex6/Dockerfile.front)
+
+Backend Dockerfile: [Dockerfile](./ex6/Dockerfile.back)
+
+```shell
+# Working directory: ./ex6
+$> docker-compose build
+$> docker-compose up
+```
+
+![Screenshot](screenshots/ex6.png)
+
