@@ -10,5 +10,9 @@ ENV REQUEST_ORIGIN=http://localhost:5000
 
 RUN go build
 
+RUN useradd -m appuser
+
+USER appuser
+
 ENTRYPOINT ["./server"]
 
