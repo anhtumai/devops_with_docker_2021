@@ -10,11 +10,11 @@ Deploy a blog-list-backend to Heroku using Github Actions: [Heroku link](https:/
 
 ### 3.2
 
-Bash script to clone, build and push Docker image to Docker Hub: [main.sh](./ex3/main.sh)
+Bash script to clone, build and push Docker image to Docker Hub: [main.sh](./ex2/main.sh)
 
-Docker file: [Dockerfile](./ex3/Dockerfile)
+Docker file: [Dockerfile](./ex2/Dockerfile)
 
-Inventory file format: [inventory](./ex3/inventory)
+Inventory file format: [inventory](./ex2/inventory)
 
 Usage:
 
