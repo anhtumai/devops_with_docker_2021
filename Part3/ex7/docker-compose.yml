@@ -5,7 +5,9 @@ services:
     ports:
       - 3000:3000
     build:
-      context: ./blog-list-frontend-v2
+      context: .
+      dockerfile: Dockerfile.optimize.front
+
     environment:
       - REACT_APP_BACKEND_URL=http://localhost:3003
     depends_on:

@@ -1,0 +1,21 @@
+FROM node:14-alpine
+
+WORKDIR /usr/src/app
+
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
+
+COPY blog-list-frontend-v2/package.json .
+
+RUN npm install --production
+
+COPY blog-list-frontend-v2/src src
+COPY blog-list-frontend-v2/public public
+COPY blog-list-frontend-v2/tsconfig.json .
+
+RUN	addgroup -S appgroup && \
+		adduser -S appuser -G appgroup && \
+		chown -R appuser .
+
+USER appuser
+
+CMD ["npm", "start"]
