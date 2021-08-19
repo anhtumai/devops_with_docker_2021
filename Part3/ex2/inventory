@@ -1,4 +1,5 @@
 git_url=<your_git_repository_URL>
+branch=<name_of_branch,_default_is_master>
 image_name=<name_you_give_to_your_image>
 username=<your_dockerhub_username>
 password=<your_dockerhub_password>
