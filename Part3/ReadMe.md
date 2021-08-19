@@ -79,3 +79,12 @@ $> docker-compose up
 ![Frontend size check](screenshots/frontendsizecheck.png)
 
 ### 3.7
+
+In this exercise, I optimize Dockerfiles for [app used in ex 2.11](../Part2/ex11).
+[App description](../Part2/ReadMe.md#2.11)
+
+![Size comparison](screenshots/ex7-size-comparison.png)
+
+As you can see, the sizes of of images used in ex 3.7 have dropped significantly
+compared to ex 2.11.
+
