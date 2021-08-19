@@ -83,9 +83,9 @@ $> docker-compose up
 In this exercise, I optimize Dockerfiles for [app used in ex 2.11](../Part2/ex11).
 Check [app description](../Part2/ReadMe.md#2.11)
 
-Frontend Dockerfile: [Dockerfile](./ex7/Dockerfile.front)
+Frontend Dockerfile: [Dockerfile](./ex7/Dockerfile.optimize.front)
 
-Backend Dockerfile: [Dockerfile](./ex7/Dockerfile.back)
+Backend Dockerfile: [Dockerfile](./ex7/Dockerfile.optimize.back)
 
 ```shell
 # Working directory: ./ex7
