@@ -23,6 +23,8 @@ $> sudo docker build . -t clone_push
 $> sudo docker run -it -v /var/run/docker.sock:/var/run/docker.sock -v $PWD/inventory:/usr/src/inventory clone_push
 ```
 
+__Notes__: git_url option only supports https link, not SSH link.
+
 ### 3.3
 
 Frontend Dockerfile: [Dockerfile](./ex3/Dockerfile.front)
