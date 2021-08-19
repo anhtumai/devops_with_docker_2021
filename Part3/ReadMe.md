@@ -81,7 +81,17 @@ $> docker-compose up
 ### 3.7
 
 In this exercise, I optimize Dockerfiles for [app used in ex 2.11](../Part2/ex11).
-[App description](../Part2/ReadMe.md#2.11)
+Check [app description](../Part2/ReadMe.md#2.11)
+
+Frontend Dockerfile: [Dockerfile](./ex7/Dockerfile.front)
+
+Backend Dockerfile: [Dockerfile](./ex7/Dockerfile.back)
+
+```shell
+# Working directory: ./ex7
+$> docker-compose build
+$> docker-compose up
+```
 
 ![Size comparison](screenshots/ex7-size-comparison.png)
 
