@@ -57,3 +57,7 @@
 	path = Part3/ex7/blog-list-backend
 	url = git@github.com:anhtumai/blog-list-backend.git
 	branch = containerize
+[submodule "Part3/ex1/blog-list-backend"]
+	path = Part3/ex1/blog-list-backend
+	url = git@github.com:anhtumai/blog-list-backend.git
+	branch = containerize

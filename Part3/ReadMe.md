@@ -2,6 +2,12 @@
 
 ## Exercises
 
+### 3.1
+
+Deploy a blog-list-backend to Heroku using Github Actions: [Heroku link](https://blog-list-backend.herokuapp.com/api/users)
+
+[Github Action workflow yml file](https://github.com/anhtumai/blog-list-backend/blob/containerize/.github/workflows/github-actions-demo.yml)
+
 ### 3.2
 
 Bash script to clone, build and push Docker image to Docker Hub: [main.sh](./ex3/main.sh)
